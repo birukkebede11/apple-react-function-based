@@ -11,7 +11,7 @@ function Youtube() {
 				const videos = data.items;
 				setYouTubeVideos(videos);
 			});
-	}, []);
+	},[]);
 	return (
 		<section className="youtubeVideosWrapper">
 			<div className="allVideosWrapper">

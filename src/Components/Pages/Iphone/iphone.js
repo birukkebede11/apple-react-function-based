@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function Iphone() {
@@ -34,7 +34,6 @@ function Iphone() {
 						let StartPrice = product.starting_price;
 						let PriceRange = product.price_range;
 						let productPage = "/iphone/" + id;
-
 						let order1 = 1;
 						let order2 = 2;
 						if (order !== 1) {
@@ -67,7 +66,7 @@ function Iphone() {
 
 								<div className={`col-sm-12 col-md-6 order-${order2}`}>
 									<div className="prodict-image">
-										<img src={img} alt="product"/>
+										<img src={img} alt="product" />
 									</div>
 								</div>
 							</div>

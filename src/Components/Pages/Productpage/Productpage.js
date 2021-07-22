@@ -5,12 +5,12 @@ function Productpage(props) {
 	const [productID, setProductID] = useState(props.match.params.pid);
 
 	useEffect(() => {
-		fetch("/iphones.json")
+		fetch("http://localhost:3001/iphones")
 			.then((res) => res.json())
 			.then((products) => {
 				const productList = products.products;
 				const singleProduct = productList.filter(
-					(product) => product.Id === productID
+					(product) => product.product_id === parseInt(productID)
 				);
 				setProducts(singleProduct);
 			})
@@ -21,14 +21,14 @@ function Productpage(props) {
 			<section className="internal-page-wrapper">
 				<div className="container">
 					{products.map((product) => {
-						let id = product.Id;
-						let title = product.Title;
-						let img = product.img;
-						let Brief = product.Brief;
-						let StartPrice = product.StartPrice;
-						let PriceRange = product.PriceRange;
+						let id = product.product_id;
+						let title = product.product_name;
+						let img = product.product_img;
+						let Brief = product.product_brief_description;
+						let StartPrice = product.starting_price;
+						let PriceRange = product.price_range;
 						let productPage = "/iphone/" + id;
-						let details = product.Description;
+						let details = product.product_description;
 
 						let productDiv = (
 							<div key={id}>
