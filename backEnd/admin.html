@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Add Iphone</title>
+	</head>
+
+	<body>
+		<h1>Add iPhone</h1>
+		<form action="http://localhost:3001/addiphones" method="post">
+			<label for="name">iPhone ID:</label><br />
+			<input type="text" name="iphoneId" />
+			<br /><br />
+			<label for="imgPath">iPhone image path:</label><br />
+			<input type="text" name="imgPath" />
+			<br /><br />
+			<label for="iphoneLink">iPhone page link:</label><br />
+			<input type="text" name="iphoneLink" />
+			<br /><br />
+			<label for="iphoneTitle">iPhone Title:</label><br />
+			<input type="text" name="iphoneTitle" />
+			<br /><br />
+			<label for="StartPrice">Starting price:</label><br />
+			<input type="text" name="StartPrice" />
+			<br /><br />
+			<label for="priceRange">Price range:</label><br />
+			<input type="text" name="priceRange" />
+			<br /><br />
+
+			<label for="briefDescription">Brief Description:</label><br />
+			<textarea name="briefDescription" cols="30" rows="10"></textarea>
+			<br /><br />
+			<label for="fullDescription">Full Description:</label><br />
+			<textarea name="fullDescription" cols="30" rows="10"></textarea>
+			<br /><br />
+			<input type="submit" value="App iPhone" />
+		</form>
+	</body>
+</html>
