@@ -2,7 +2,7 @@ function Paragraph() {
 	return (
 		<div>
 			<section className="top-paragraph">
-				<div className="container">
+				<div className="container ">
 					<div className="title">We’re open for you.</div>
 					<div className="text">
 						Our retail stores are closed, but you can buy our products here

@@ -19,7 +19,7 @@ function Iphone() {
 			<section className="internal-page-wrapper">
 				<div className="container">
 					<div className="row justify-content-center text-center">
-						<div className="col-12">
+						<div className="col-12 mt-5">
 							<div className="title-wraper font-weight-bold">Iphones</div>
 							<div className="brief-description">
 								The best for the brightest.
@@ -27,7 +27,7 @@ function Iphone() {
 						</div>
 					</div>
 					{products?.map((product) => {
-						let id = product.product_id;
+						let id = product.product_url;
 						let title = product.product_name;
 						let img = product.product_img;
 						let Brief = product.product_brief_description;

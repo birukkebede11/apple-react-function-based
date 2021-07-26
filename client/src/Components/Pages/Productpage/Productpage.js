@@ -10,7 +10,7 @@ function Productpage(props) {
 			.then((products) => {
 				const productList = products.products;
 				const singleProduct = productList.filter(
-					(product) => product.product_id === parseInt(productID)
+					(product) => product.product_url === productID
 				);
 				setProducts(singleProduct);
 			})
@@ -35,8 +35,10 @@ function Productpage(props) {
 							let productDiv = (
 								<div key={id}>
 									<div className="row justify-content-center text-center">
-										<div className="col-12">
-											<div className="title-wraper">{title}</div>
+										<div className="col-12 mt-5">
+											<div className="title-wraper font-weight-bold">
+												{title}
+											</div>
 											<div className="brief-description">{Brief}</div>
 										</div>
 									</div>
