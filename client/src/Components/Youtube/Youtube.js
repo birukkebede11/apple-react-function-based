@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-// "https://www.googleapis.com/youtube/v3/search?key=AIzaSyDfvIinPmGfJ_7xUT-k4KIldSmdCaU4-Oo&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=6";
+
 function Youtube() {
 	const [youTubeVideos, setYouTubeVideos] = useState([]);
 	useEffect(() => {
 		fetch(
-			"https://www.googleapis.com/youtube/v3/search?key=AIzaSyDr5hAYICU77mr03xv_MpwfJFF6dk_TKTM&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=6"
+			`https://www.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}&channelId=${process.env.REACT_APP_CHANNEL_ID}&part=snippet,id&order=date&maxResults=6`
 		)
 			.then((response) => response.json())
 			.then((data) => {
