@@ -392,6 +392,15 @@ img {
 .upper-text-container a {
   color: #515154;
 }
+
+.footer h2 a{
+  text-decoration: none;
+  color: #86868b;
+}
+
+.footer h2 a:hover{
+  color: #000;
+}
 /*Media Query*/
 /* Footer */
 @media (max-width: 768px){

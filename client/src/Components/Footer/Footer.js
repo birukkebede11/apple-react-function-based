@@ -301,6 +301,17 @@ function Footer() {
 							<div className="footer-country-name">United States</div>
 						</div>
 					</div>
+					<div className="text-center p-1">
+						<h2>
+							Built By:{" "}
+							<a
+								href="https://www.biruk14.com/"
+								target="_blank"
+								rel="noreferrer">
+								Biruk Kebede
+							</a>
+						</h2>
+					</div>
 				</div>
 			</footer>
 		</div>
