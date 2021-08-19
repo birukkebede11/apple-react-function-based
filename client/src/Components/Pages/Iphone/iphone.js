@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 function Iphone() {
 	const [products, setProducts] = useState([]);
 	useEffect(() => {
-		fetch("http://localhost:3001/iphones")
+		// fetch("http://localhost:3001/iphones") local host
+
+		//remote server
+		fetch(process.env.REACT_APP_IPHONE_PAGE_ROUTE)
 			.then((res) => res.json())
 			.then((products) => {
 				const product = products.products;
