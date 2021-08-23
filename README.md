@@ -14,7 +14,7 @@ For the front end, I wanted to make the current [apple.com](https://www.apple.co
 
 # Build Status
 
-To be Deployed
+Live: [here](https://apple-clone-react.herokuapp.com/) on Heroku.
 
 # Stack
 
